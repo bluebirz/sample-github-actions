@@ -1,0 +1,15 @@
+name: "Sample workflow"
+
+on:
+  workflow_dispatch:
+
+# env:
+
+jobs:
+  prepare:
+    name: "prepare"
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple echo
+        run: >
+          echo "hello world"
