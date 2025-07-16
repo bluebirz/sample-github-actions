@@ -1,4 +1,4 @@
-name: "Sample workflow"
+name: "Sample GCP workflow"
 
 on:
   workflow_dispatch:
