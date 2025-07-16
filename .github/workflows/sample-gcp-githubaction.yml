@@ -17,6 +17,11 @@ jobs:
     name: "prepare"
     runs-on: ubuntu-latest
     steps:
+      - name: Debug OIDC Claims
+        uses: github/actions-oidc-debugger@main
+        with:
+          audience: "${{ github.server_url }}/${{ github.repository_owner }}"
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
