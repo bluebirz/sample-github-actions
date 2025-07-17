@@ -5,7 +5,7 @@ on:
 
 env:
   PROJECT_ID: bluebirz-playground
-  WLID_PROVIDER: projects/390283753510/locations/global/workloadIdentityPools/bluebirz-github-pool/providers/github-provider
+  WLID_PROVIDER: projects/390283753510/locations/global/workloadIdentityPools/bluebirz-github-pool-2/providers/github-provider
   SA_EMAIL: github-actions-sa@bluebirz-playground.iam.gserviceaccount.com
 
 permissions:
