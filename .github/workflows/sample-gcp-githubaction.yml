@@ -17,11 +17,6 @@ jobs:
     name: "prepare"
     runs-on: ubuntu-latest
     steps:
-      - name: Debug OIDC Claims
-        uses: github/actions-oidc-debugger@main
-        with:
-          audience: "${{ github.server_url }}/${{ github.repository_owner }}"
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -40,6 +35,9 @@ jobs:
         with:
           project_id: ${{ env.PROJECT_ID }}
 
+  list-files:
+    runs-on: ubuntu-latest
+    steps:
       - name: test
         run: >
-          bq show --format=prettyjson --schema test.ncd_test
+          gcloud storage ls gs://bluebirz-beam
