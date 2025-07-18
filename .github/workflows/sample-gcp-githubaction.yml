@@ -36,6 +36,9 @@ jobs:
           project_id: ${{ env.PROJECT_ID }}
 
   list-files:
+    name: "list files"
+    needs:
+      - prepare
     runs-on: ubuntu-latest
     steps:
       - name: test
