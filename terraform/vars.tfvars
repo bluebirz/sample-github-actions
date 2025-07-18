@@ -1,0 +1,7 @@
+project_id                      = "bluebirz-playground"
+wlid_pool_id                    = "bluebirz-github-pool-2"
+wlid_pool_display_name          = "Bluebirz github pool 2"
+wlid_pool_provider_id           = "github-provider"
+wlid_pool_provider_display_name = "GitHub Provider"
+wlid_pool_provider_repo_owner   = "bluebirz"
+wlid_sa                         = "github-actions-sa"

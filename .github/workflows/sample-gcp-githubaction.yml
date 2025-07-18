@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_ID: bluebirz-playground
-  WLID_PROVIDER: projects/390283753510/locations/global/workloadIdentityPools/bluebirz-github-pool-2/providers/github-provider
-  SA_EMAIL: github-actions-sa@bluebirz-playground.iam.gserviceaccount.com
+  PROJECT_ID: <project_id>
+  WLID_PROVIDER: projects/<project_number>/locations/global/workloadIdentityPools/<pool_id>/providers/<provider_id>
+  SA_EMAIL: <service_account>@<project_id>.iam.gserviceaccount.com
 
 permissions:
   id-token: write
@@ -37,4 +37,4 @@ jobs:
 
       - name: List files
         run: >
-          gcloud storage ls gs://bluebirz-beam
+          gcloud storage ls ...
