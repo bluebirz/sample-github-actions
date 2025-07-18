@@ -13,8 +13,8 @@ permissions:
   contents: read
 
 jobs:
-  prepare:
-    name: "prepare"
+  test:
+    name: "test"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -35,12 +35,6 @@ jobs:
         with:
           project_id: ${{ env.PROJECT_ID }}
 
-  list-files:
-    name: "list files"
-    needs:
-      - prepare
-    runs-on: ubuntu-latest
-    steps:
-      - name: test
+      - name: List files
         run: >
           gcloud storage ls gs://bluebirz-beam
