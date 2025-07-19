@@ -19,3 +19,6 @@ variable "wlid_pool_provider_repo_owner" {
 variable "wlid_sa" {
   type = string
 }
+variable "wlid_sa_name" {
+  type = string
+}

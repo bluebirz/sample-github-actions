@@ -28,7 +28,7 @@ resource "google_iam_workload_identity_pool_provider" "my_github_provider" {
 
 resource "google_service_account" "my_service_account" {
   account_id   = var.wlid_sa
-  display_name = "GitHub Actions Service Account"
+  display_name = var.wlid_sa_name
   description  = "Service account for GitHub Actions to access Google Cloud resources"
 }
 
