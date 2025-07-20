@@ -9,7 +9,7 @@ Sample repo for Github actions
 
 ## blog related
 
-- [Blog] [Let's try: Github actions for Github integration](https://bluebirz.net/posts/try-github-actions/#create-github-actions-with-gcp-provider)
+- [Blog] [Let's try: Github actions for Github integration](https://bluebirz.net/posts/try-github-actions/)
 - [Medium] [Let's try: Github actions for Github integration](https://medium.com/@bluebirz/lets-try-github-actions-for-github-integration-241398ca59a6)
 
 ## How to run
